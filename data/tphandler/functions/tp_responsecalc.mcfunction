@@ -1,0 +1,2 @@
+execute store result score @e[tag=TPEnabled] TP_Calc run data get entity @e[nbt={Item:{tag:{tpState:2L}}},limit=1] Item.tag.requesterID
+execute as @e[tag=TPEnabled] run scoreboard players operation @s TP_Calc -= @s TP_ID

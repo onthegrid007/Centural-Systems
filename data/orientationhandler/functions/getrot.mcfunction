@@ -1,0 +1,2 @@
+function orientationhandler:getpitch
+function orientationhandler:getyaw

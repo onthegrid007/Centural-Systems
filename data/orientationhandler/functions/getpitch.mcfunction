@@ -1,0 +1,1 @@
+execute store result score @s rot_pitch run data get entity @s Rotation[0]
