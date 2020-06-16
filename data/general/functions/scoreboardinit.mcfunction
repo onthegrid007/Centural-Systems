@@ -1,59 +1,57 @@
-scoreboard objectives remove Clear_Lag_Timer
-scoreboard objectives remove DelHome
-scoreboard objectives remove Fly
-scoreboard objectives remove GM
-scoreboard objectives remove Home
-scoreboard objectives remove Lemmon_Timer
-scoreboard objectives remove Login_Handler
-scoreboard objectives remove MOD
-scoreboard objectives remove Mod_Level
-scoreboard objectives remove Playtime_Ranks
-scoreboard objectives remove POS
-scoreboard objectives remove pos_x
-scoreboard objectives remove pos_y
-scoreboard objectives remove pos_z
-scoreboard objectives remove rot_pitch
-scoreboard objectives remove rot_yaw
-scoreboard objectives remove SetHome
-scoreboard objectives remove Sprint
-scoreboard objectives remove Swim
-scoreboard objectives remove TP
-scoreboard objectives remove TP_Calc
 
-scoreboard objectives remove TP_Response
-scoreboard objectives remove TPHere
+scoreboard objectives remove play_time_ranks
+scoreboard objectives remove position_x
+scoreboard objectives remove position_y
+scoreboard objectives remove position_z
+scoreboard objectives remove rotation_pitch
+scoreboard objectives remove rotation_yaw
+scoreboard objectives remove teleport_math
+
+scoreboard objectives remove fly
+scoreboard objectives remove login_handler
+scoreboard objectives remove clear_lag_timer
+scoreboard objectives remove lemon_timer
+scoreboard objectives remove sprint
+scoreboard objectives remove swim
+scoreboard objectives remove walk_ow
+scoreboard objectives remove walk
+scoreboard objectives remove walk_uw
+scoreboard objectives remove DELHOME
+scoreboard objectives remove GM
+scoreboard objectives remove HOME
+scoreboard objectives remove MOD
+scoreboard objectives remove POS
+scoreboard objectives remove SETHOME
+scoreboard objectives remove TP
+scoreboard objectives remove TPReply
 scoreboard objectives remove TPO
 scoreboard objectives remove TPOHere
-scoreboard objectives remove Walk
-scoreboard objectives remove WalkOW
-scoreboard objectives remove WalkUW
 
-scoreboard objectives add Clear_Lag_Timer minecraft.custom:minecraft.play_one_minute
-scoreboard objectives add DelHome trigger
-scoreboard objectives add Fly minecraft.custom:minecraft.fly_one_cm
+scoreboard objectives add mod_level dummy "Mod Level"
+scoreboard objectives add play_time_ranks dummy "Play Time Rankings"
+scoreboard objectives add position_x dummy "POS X"
+scoreboard objectives add position_y dummy "POS Y"
+scoreboard objectives add position_z dummy "POS Z"
+scoreboard objectives add rotation_pitch dummy "ROT Pitch"
+scoreboard objectives add rotation_yaw dummy "ROT Yaw"
+scoreboard objectives add teleport_math dummy "TP Math"
+scoreboard objectives add teleport_id dummy "TP ID"
+scoreboard objectives add fly minecraft.custom:minecraft.fly_one_cm  "Fly One CM"
+scoreboard objectives add login_handler minecraft.custom:minecraft.leave_game "Login Handler"
+scoreboard objectives add clear_lag_timer minecraft.custom:minecraft.play_one_minute  "Clear Lag Timer"
+scoreboard objectives add lemon_timer minecraft.custom:minecraft.play_one_minute  "Lemon Timer"
+scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm "Sprint One CM"
+scoreboard objectives add swim minecraft.custom:minecraft.swim_one_cm "Swim One CM"
+scoreboard objectives add walk_ow minecraft.custom:minecraft.walk_on_water_one_cm "Walk On Water One CM"
+scoreboard objectives add walk minecraft.custom:minecraft.walk_one_cm "Walk One CM"
+scoreboard objectives add walk_uw minecraft.custom:minecraft.walk_under_water_one_cm "Walk Under Water One CM"
+scoreboard objectives add DELHOME trigger 
 scoreboard objectives add GM trigger
-scoreboard objectives add Home trigger
-scoreboard objectives add Lemmon_Timer minecraft.custom:minecraft.play_one_minute
-scoreboard objectives add Login_Handler minecraft.custom:minecraft.leave_game
+scoreboard objectives add HOME trigger
 scoreboard objectives add MOD trigger
-scoreboard objectives add Mod_Level dummy
-scoreboard objectives add Playtime_Ranks dummy
 scoreboard objectives add POS trigger
-scoreboard objectives add pos_x dummy
-scoreboard objectives add pos_y dummy
-scoreboard objectives add pos_z dummy
-scoreboard objectives add rot_pitch dummy
-scoreboard objectives add rot_yaw dummy
-scoreboard objectives add SetHome trigger
-scoreboard objectives add Sprint minecraft.custom:minecraft.sprint_one_cm
-scoreboard objectives add Swim minecraft.custom:minecraft.swim_one_cm
+scoreboard objectives add SETHOME trigger
 scoreboard objectives add TP trigger
-scoreboard objectives add TP_Calc dummy
-scoreboard objectives add TP_ID dummy
-scoreboard objectives add TP_Response trigger
-scoreboard objectives add TPHere trigger
+scoreboard objectives add TPReply trigger
 scoreboard objectives add TPO trigger
 scoreboard objectives add TPOHere trigger
-scoreboard objectives add Walk minecraft.custom:minecraft.walk_one_cm
-scoreboard objectives add WalkOW minecraft.custom:minecraft.walk_on_water_one_cm
-scoreboard objectives add WalkUW minecraft.custom:minecraft.walk_under_water_one_cm
