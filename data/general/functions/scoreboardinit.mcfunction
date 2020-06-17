@@ -8,9 +8,6 @@ scoreboard objectives remove rotation_yaw
 scoreboard objectives remove teleport_math
 
 scoreboard objectives remove fly
-scoreboard objectives remove login_handler
-scoreboard objectives remove clear_lag_timer
-scoreboard objectives remove lemon_timer
 scoreboard objectives remove sprint
 scoreboard objectives remove swim
 scoreboard objectives remove walk_ow
@@ -25,7 +22,7 @@ scoreboard objectives remove SETHOME
 scoreboard objectives remove TP
 scoreboard objectives remove TPReply
 scoreboard objectives remove TPO
-scoreboard objectives remove TPOHere
+scoreboard objectives remove TPOHERE
 
 scoreboard objectives add mod_level dummy "Mod Level"
 scoreboard objectives add play_time_ranks dummy "Play Time Rankings"
@@ -54,4 +51,4 @@ scoreboard objectives add SETHOME trigger
 scoreboard objectives add TP trigger
 scoreboard objectives add TPReply trigger
 scoreboard objectives add TPO trigger
-scoreboard objectives add TPOHere trigger
+scoreboard objectives add TPOHERE trigger

@@ -9,4 +9,4 @@ execute as @e[scores={teleport_math=0},limit=1] run function tphandler:sendreque
 execute unless entity @e[scores={teleport_math=0},limit=1] as @e[nbt={Item:{tag:{tpState:0L}}},limit=1] run function tphandler:playerdoesnotexist
 data modify entity @e[nbt={Item:{tag:{tpState:0L}}},limit=1] Item.tag.tpState set value 1L
 tag @s remove TPRun
-scoreboard players enable @s TP
+execute as @a run function tphandler:enables
