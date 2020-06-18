@@ -1,2 +1,1 @@
-execute as @a run function orientationhandler:getpos
-execute as @a run function orientationhandler:getrot
+execute as @a run function orientationhandler:get_orientation

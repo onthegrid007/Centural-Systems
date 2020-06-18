@@ -1,1 +1,0 @@
-execute store result score @s pos_y run data get entity @s Pos[1] 1

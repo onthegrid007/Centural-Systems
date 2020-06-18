@@ -3,7 +3,9 @@ function general:scoreboardinit
 function general:gameruleinit
 function general:teamsinit
 execute as @a run function tphandler:enables
-scoreboard objectives setdisplay list TP_ID
+scoreboard objectives setdisplay list teleport_id
+scoreboard objectives setdisplay belowName health
+execute unless score NewID teleport_id >= #Setup teleport_id run function general:setuptp
 forceload add -1 0
 forceload add 0 -1
 forceload add -1 -1

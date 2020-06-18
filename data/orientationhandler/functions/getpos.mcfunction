@@ -1,3 +1,0 @@
-function orientationhandler:getx
-function orientationhandler:gety
-function orientationhandler:getz

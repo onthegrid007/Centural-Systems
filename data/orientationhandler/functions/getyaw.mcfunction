@@ -1,1 +1,0 @@
-execute store result score @s rot_yaw run data get entity @s Rotation[1]
