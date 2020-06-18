@@ -10,4 +10,4 @@ execute as @e[scores={TPOHERE=1..}] run scoreboard players set @s TPOHERE 0
 execute as @e[scores={TPReply=..-1}] run scoreboard players set @s TPReply 0
 execute as @e[scores={TPReply=1..}] run scoreboard players set @s TPReply 0
 
-scoreboard players reset * teleport_math
+scoreboard players reset * one_time_math

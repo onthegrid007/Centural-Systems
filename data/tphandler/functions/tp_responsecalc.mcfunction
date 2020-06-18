@@ -1,2 +1,2 @@
-execute store result score @e[tag=TPEnabled] teleport_math run data get entity @e[nbt={Item:{tag:{tpState:2L}}},limit=1] Item.tag.requesterID
-execute as @e[tag=TPEnabled] run scoreboard players operation @s teleport_math -= @s teleport_id
+execute store result score @e[tag=TPEnabled] one_time_math run data get entity @e[nbt={Item:{tag:{tpState:2L}}},limit=1] Item.tag.requesterID
+execute as @e[tag=TPEnabled] run scoreboard players operation @s one_time_math -= @s teleport_id
