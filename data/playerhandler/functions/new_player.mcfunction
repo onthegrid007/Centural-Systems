@@ -5,7 +5,7 @@ tag @s add TPEnabled
 tag @s add ReturningPlayer
 function tphandler:enables
 execute as @a[tag=TPEnabled] run function tphandler:enables
-execute as @s[scores={mod_level=1..}] run function modhandler:enables
+execute as @a[scores={mod_level=1..}] run function modhandler:enables
 execute as @a run function orientationhandler:enables
 team join Players @s
 
