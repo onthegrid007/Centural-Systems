@@ -2,4 +2,5 @@ tellraw @a ["",{"text":"[","bold":true,"color":"dark_blue"},{"text":"C","bold":t
 execute as @a[tag=TPEnabled] run function tphandler:enables
 execute as @a[scores={mod_level=1..}] run function modhandler:enables
 execute as @a run function orientationhandler:enables
+execute as @a[scores={mod_level=1..}] run function gamemodehandler:enables
 scoreboard players set @s login_handler 0
