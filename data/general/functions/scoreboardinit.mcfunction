@@ -30,3 +30,4 @@ scoreboard objectives add TP trigger
 scoreboard objectives add TPReply trigger
 scoreboard objectives add TPO trigger
 scoreboard objectives add TPOHERE trigger
+scoreboard objectives add xp xp "XP"
