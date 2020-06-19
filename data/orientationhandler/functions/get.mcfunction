@@ -1,0 +1,3 @@
+function orientationhandler:get_orientation
+function orientationhandler:get_dimension
+

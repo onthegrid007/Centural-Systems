@@ -6,7 +6,7 @@ gamerule doDaylightCycle true
 gamerule doEntityDrops true
 gamerule doFireTick true
 gamerule doInsomnia true
-gamerule doImmediateRespawn true
+gamerule doImmediateRespawn false
 gamerule doLimitedCrafting false
 gamerule doMobLoot true
 gamerule doMobSpawning true

@@ -1,1 +1,3 @@
-execute as @a run function orientationhandler:get_orientation
+execute as @a[scores={POS=1..}] run function orientationhandler:pos
+execute as @a[scores={POS=..-1}] run function orientationhandler:pos
+function orientationhandler:reset
