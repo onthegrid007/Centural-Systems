@@ -9,6 +9,7 @@ scoreboard objectives add rotation_pitch dummy "ROT Pitch"
 scoreboard objectives add rotation_yaw dummy "ROT Yaw"
 scoreboard objectives add one_time_math dummy
 scoreboard objectives add teleport_id dummy "TP ID"
+scoreboard objectives add dimension dummy "Dimension"
 scoreboard objectives add health health "Health"
 scoreboard objectives add fly minecraft.custom:minecraft.fly_one_cm  "Fly One CM"
 scoreboard objectives add login_handler minecraft.custom:minecraft.leave_game "Login Handler"
