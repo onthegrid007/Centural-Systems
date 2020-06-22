@@ -3,11 +3,10 @@ scoreboard players operation @s teleport_id = NewID teleport_id
 scoreboard players add NewID teleport_id 1
 tag @s add TPEnabled
 tag @s add ReturningPlayer
-function tphandler:enables
 execute as @a[tag=TPEnabled] run function tphandler:enables
 execute as @a[scores={mod_level=1..}] run function modhandler:enables
 execute as @a run function orientationhandler:enables
 execute as @a[scores={mod_level=1..}] run function gamemodehandler:enables
-execute as @a run function orientationhandler:enables
+execute as @a run function homehandler:enables
 team join Players @s
 

@@ -5,6 +5,10 @@
 # Description: This handler should duplicate the base core object handler (once completed) then manage spawning in a spawn and/or controlling
 #               the scoreboard values that can be spawned at and any plugin/feature such as ability to add multiple spawn points.
 
+# start temporary scoreboard
+scoreboard objectives remove count
+scoreboard objectives add count dummy "Count Spawn Handlers"
+
 # requires spawn_handler
 execute unless entity @e[tag=spawn_handler] run  tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_handler missing, summoning now","color":"red"}]
 execute unless entity @e[tag=spawn_handler] run summon armor_stand 0 0 0 {NoGravity:1b,Marker:1b,Tags:["handler","spawn_handler"],Invisible:1b,InvulnerableL1b}
