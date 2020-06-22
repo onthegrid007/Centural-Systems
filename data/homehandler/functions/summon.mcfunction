@@ -1,1 +1,1 @@
-summon minecraft:armor_stand ~ ~ ~ {NoGravity:1, NoBasePlate:1, HandItems:[{Count:1,id:paper,tag:{homeState:0L, homeSuccess:1b, homeOwnerID:0L, homeID:0L, testID:0L}},{}]}
+summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1, PersistenceRequired:1, NoGravity:1, NoBasePlate:1, Invisible:1b, HandItems:[{Count:1,id:paper,tag:{homeState:0L, homeSuccess:1b, homeOwnerID:0L, homeID:0L, testID:0L}},{}]}

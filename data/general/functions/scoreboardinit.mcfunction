@@ -15,6 +15,8 @@ scoreboard objectives add fly minecraft.custom:minecraft.fly_one_cm  "Fly One CM
 scoreboard objectives add login_handler minecraft.custom:minecraft.leave_game "Login Handler"
 scoreboard objectives add clear_lag_timer minecraft.custom:minecraft.play_one_minute  "Clear Lag Timer"
 scoreboard objectives add lemon_timer minecraft.custom:minecraft.play_one_minute  "Lemon Timer"
+scoreboard objectives add teleport_timer minecraft.custom:minecraft.play_one_minute "TP Wait Timer"
+scoreboard objectives add home_timer minecraft.custom:minecraft.play_one_minute "Home Wait Timer"
 scoreboard objectives add sprint minecraft.custom:minecraft.sprint_one_cm "Sprint One CM"
 scoreboard objectives add swim minecraft.custom:minecraft.swim_one_cm "Swim One CM"
 scoreboard objectives add walk_on_water minecraft.custom:minecraft.walk_on_water_one_cm "Walk On Water One CM"
