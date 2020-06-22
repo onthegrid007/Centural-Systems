@@ -31,7 +31,7 @@ execute if entity @e[tag=spawn_handler,scores={count=..0}] run tellraw @a[tag=ve
 
 # determine if spawn_handler(s) count exceeds one
 execute if entity @e[tag=spawn_handler,scores={count=2..}] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_handler count is two or above (should only be one)","color":"red"}]
-execute if entity @e[tag=spawn_handler,scores={count=2..}] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_handler count is two or above (should only be one)","color":"red"},{"selector":"@s","score":"count"}]
+execute if entity @e[tag=spawn_handler,scores={count=2..}] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_handler count is two or above (should only be one)","color":"red"},{"score":{"name":"@s","objective":"count"},"color":"blue"}]
 
 # remove temporary scoreboard
 scoreboard objectives remove count
@@ -39,7 +39,7 @@ scoreboard objectives remove count
 # catch if spawn point(s) are missing
 execute unless entity @e[tag=spawn_point] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_point missing, spawning in atleast one around 0,Y,0","color":"red"}]
 execute unless entity @e[tag=spawn_point] run summon armor_stand 0 256 0 {Marker:1b,Tags:["spawn_point","has_not_determined_ground"],Invisible:1b,Invulnerable:1b}
-execute if entity @e[tag=spawn_point,tag=has_not_determined_ground] run spreadplayers ~ ~ 0 0 false @e[tag=spawn_point,tag=has_not_determined_ground]
+execute if entity @e[tag=spawn_point,tag=has_not_determined_ground] run spreadplayers ~ ~ 1 1 false @e[tag=spawn_point,tag=has_not_determined_ground]
 execute if entity @e[tag=spawn_point,tag=has_not_determined_ground] run tag @e[tag=spawn_point,tag=has_not_determined_ground] remove has_not_determined_ground
 
 # creating triggers
