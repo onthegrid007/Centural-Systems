@@ -5,6 +5,7 @@
 execute if entity @p[scores={spawn_cooldown=20000..},tag=!spawn_teleport_enabled] run tag @p[scores={spawn_cooldown=20000..},tag=!spawn_teleport_enabled] add enabled_spawn_teleport
 
 # enabled spawn teleport
+execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run tag @s remove spawn_teleport_enabled
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run scoreboard players set @s spawn_cooldown 0
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run scoreboard players enable @s spawn
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run tag @s add spawn_teleport_enabled
