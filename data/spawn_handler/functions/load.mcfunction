@@ -11,7 +11,7 @@ scoreboard objectives add count dummy "Count Spawn Handlers"
 
 # requires spawn_handler
 execute unless entity @e[tag=spawn_handler] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_handler missing, summoning now","color":"red"}]
-execute unless entity @e[tag=spawn_handler] run summon armor_stand 0 0 0 {NoGravity:1b,Marker:1b,Tags:["handler","spawn_handler"],Invisible:1b,InvulnerableL1b}
+execute unless entity @e[tag=spawn_handler] run summon armor_stand 0 0 0 {NoGravity:1b,Marker:1b,Tags:["handler","spawn_handler"],Invisible:1b,Invulnerable:1b}
 # TODO add tag reset to delete if spawn handler exists but has reset tag attached
 
 # catch if handler tag is missing from spawn_handler
@@ -38,7 +38,7 @@ scoreboard objectives remove count
 
 # catch if spawn point(s) are missing
 execute unless entity @e[tag=spawn_point] run tellraw @a[tag=verbose] [{"text":"[ERROR]: ","color":"dark_red"},{"text":"spawn_point missing, spawning in atleast one around 0,Y,0","color":"red"}]
-execute unless entity @e[tag=spawn_point] run summon armor_stand 0 256 0 {Marker:1b,Tags:["spawn_point","has_not_determined_ground"],Invisible:1b,InvulnerableL1b}
+execute unless entity @e[tag=spawn_point] run summon armor_stand 0 256 0 {Marker:1b,Tags:["spawn_point","has_not_determined_ground"],Invisible:1b,Invulnerable:1b}
 execute if entity @e[tag=spawn_point,tag=has_not_determined_ground] run spreadplayers ~ ~ 0 0 false @e[tag=spawn_point,tag=has_not_determined_ground]
 execute if entity @e[tag=spawn_point,tag=has_not_determined_ground] run tag @e[tag=spawn_point,tag=has_not_determined_ground] remove has_not_determined_ground
 
