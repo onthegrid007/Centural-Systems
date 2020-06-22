@@ -11,8 +11,10 @@ execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_telepor
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run tag @s remove enabled_spawn_teleport
 
 #
-execute if entity @p[tag=!spawn_teleport_enabled] run scoreboard objectives remove spawn_cooldown
-execute unless entity @p[tag=!spawn_teleport_enabled] run scoreboard objectives add spawn_cooldown minecraft.custom:minecraft.play_one_minute "Teleport To Spawn Point(s) Cooldown Timer"
+execute unless entity @p[tag=!spawn_teleport_enabled] run scoreboard objectives remove spawn_cooldown
+execute if entity @p[tag=spawn_teleport_enabled] run scoreboard objectives add spawn_cooldown minecraft.custom:minecraft.play_one_minute "Teleport To Spawn Point(s) Cooldown Timer"
 
-execute if entity @p[scores={spawn=1..}] run tp @p[scores={spawn=1..}] @r[tag=spawn_point]
-execute if entity @p[scores={spawn=1..}] run tag @p[scores={spawn=1..}] remove spawn_teleport_enabled
+execute if entity @p[scores={spawn=1..},tag=spawn_teleport_enabled] run tp @p[scores={spawn=1..},tag=spawn_teleport_enabled] @r[tag=spawn_point]
+execute if entity @p[scores={spawn=1..},tag=spawn_teleport_enabled] run scoreboard players set @p[scores={spawn=1..},tag=spawn_teleport_enabled] spawn 0
+execute if entity @p[scores={spawn=1..},tag=spawn_teleport_enabled] run scoreboard players set @p[scores={spawn=1..},tag=spawn_teleport_enabled] spawn_cooldown 0
+execute if entity @p[scores={spawn=1..},tag=spawn_teleport_enabled] run tag @p[scores={spawn=1..},tag=spawn_teleport_enabled] remove spawn_teleport_enabled
