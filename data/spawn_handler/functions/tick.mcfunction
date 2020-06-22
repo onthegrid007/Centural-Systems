@@ -2,7 +2,7 @@
 
 # Re-enabled spawn teleport
 # Note: I have this hardcoded here, perhaps operation to dynamically assign cooldown base on other plugin properties..
-execute if entity @p[scores={spawn_cooldown=20000..},tag=!spawn_teleport_enabled] run tag @p[scores={spawn_cooldown=20000..},tag=!spawn_teleport_enabled] add enabled_spawn_teleport
+execute if entity @p[scores={spawn_cooldown=20000..}] run tag @p[scores={spawn_cooldown=20000..}] add enabled_spawn_teleport
 
 # enabled spawn teleport
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run tag @s remove spawn_teleport_enabled
