@@ -1,1 +1,1 @@
-summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1, PersistenceRequired:1, NoGravity:1, NoBasePlate:1, Invisible:1b, HandItems:[{Count:1,id:paper,tag:{homeState:0L, homeSuccess:1b, homeOwnerID:0L, homeID:0L, testID:0L}},{}]}
+summon armor_stand ~ ~ ~ {Invisible:0b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Small:0b,ShowArms:1b,DisabledSlots:2039583,Attributes:[{Name:"generic.knockbackResistance",Base:0d},{Name:"generic.movementSpeed",Base:1d},{Name:"generic.armor",Base:1d},{Name:"generic.armorToughness",Base:1d}]}
