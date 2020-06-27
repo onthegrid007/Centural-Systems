@@ -1,1 +1,0 @@
-summon armor_stand ~ ~ ~ {Invisible:0b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,NoGravity:1b,Small:0b,ShowArms:1b,DisabledSlots:2039583,Attributes:[{Name:"generic.knockbackResistance",Base:0d},{Name:"generic.movementSpeed",Base:1d},{Name:"generic.armor",Base:1d},{Name:"generic.armorToughness",Base:1d}]}

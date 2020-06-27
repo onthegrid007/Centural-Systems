@@ -1,1 +1,0 @@
-execute store result score @s dimension run data get entity @s Dimension
