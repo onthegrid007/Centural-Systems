@@ -9,6 +9,9 @@ forceload add -1 0
 forceload add 0 -1
 forceload add -1 -1
 forceload add 0 0
+worldborder center 0 0
+worldborder set 200000
+worldborder warning distance 1
 execute as @a[tag=TPEnabled] run function tp_handler:enables
 execute as @a[scores={mod_level=1..}] run function mod_handler:enables
 execute as @a run function orientation_handler:enables
