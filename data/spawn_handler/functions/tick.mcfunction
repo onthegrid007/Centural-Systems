@@ -9,7 +9,7 @@ execute if entity @p[scores={add_spawn_point=1..}] at @p[scores={add_spawn_point
 execute if entity @p[scores={add_spawn_point=1..}] run tag @p[scores={add_spawn_point=1..}] add enable_add_spawn_point
 execute if entity @p[scores={add_spawn_point=1..}] run scoreboard players set @p[scores={add_spawn_point=1..}] 0
 execute if entity @p[scores={add_spawn_point=1..}] run scoreboard players enable @p[tag=enable_add_spawn_point] add_spawn_point
-execute if entity @p[scores={add_spawn_point=1..}] run tag @p[scores={add_spawn_point=1..}] remove enable_add_spawn_point
+execute if entity @p[scores={add_spawn_point=1..}] run tag @p[tag=enable_add_spawn_point] remove enable_add_spawn_point
 # End Admin Commands
 
 
