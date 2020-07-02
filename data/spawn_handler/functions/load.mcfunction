@@ -5,6 +5,9 @@
 # Description: This handler should duplicate the base core object handler (once completed) then manage spawning in a spawn and/or controlling
 #               the scoreboard values that can be spawned at and any plugin/feature such as ability to add multiple spawn points.
 
+#
+scoreboard objectives add add_spawn_point trigger "Add Spawn Point"
+
 # start temporary scoreboard
 scoreboard objectives remove count
 scoreboard objectives add count dummy "Count Spawn Handlers"
