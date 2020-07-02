@@ -4,6 +4,17 @@
 # Note: I have this hardcoded here, perhaps operation to dynamically assign cooldown base on other plugin properties..
 execute if entity @p[scores={spawn_cooldown=1000..}] run tag @p[scores={spawn_cooldown=1000..}] add enabled_spawn_teleport
 
+# Admin Commands
+execute if entity @p[scores={add_spawn_point=1..}] at @p[scores={add_spawn_point=1..}] run summon armor_stand ~ ~ ~ {Tags:["spawn_point"],Marker:1b,NoGravity:1b,Invisible:1b}
+execute if entity @p[scores={add_spawn_point=1..}] run tag @p[scores={add_spawn_point=1..}] add enable_add_spawn_point
+execute if entity @p[scores={add_spawn_point=1..}] run scoreboard players set @p[scores={add_spawn_point=1..}] 0
+execute if entity @p[scores={add_spawn_point=1..}] run scoreboard players enabled @p[tag=enable_add_spawn_point] add_spawn_point
+execute if entity @p[scores={add_spawn_point=1..}] run tag @p[scores={add_spawn_point=1..}] remove enable_add_spawn_point
+# End Admin Commands
+
+
+
+
 # enabled spawn teleport
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run tag @s remove spawn_teleport_enabled
 execute if entity @p[tag=enabled_spawn_teleport] as @p[tag=enabled_spawn_teleport] run scoreboard players set @s spawn_cooldown 0
