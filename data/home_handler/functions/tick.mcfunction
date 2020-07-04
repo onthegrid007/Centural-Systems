@@ -25,6 +25,8 @@ execute if entity @p[scores={set_home=1..}] as @p[scores={set_home=1}] run tag @
 # End Set Home Trigger
 
 # Start Teleport Home Trigger
+
+execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] run tellraw @a[tag=verbose] {"text":"setblock end_gateway"}
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] run setblock 0 10 0 end_gateway
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 store result block ~ ~ ~ ExitPortal.X double 1 run scoreboard players get @s home_x
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 store result block ~ ~ ~ ExitPortal.Y double 1 run scoreboard players get @s home_y
@@ -33,6 +35,5 @@ execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 unless entity @e[tag=teleport_home,distance=..2,type=item] run tp @s @e[tag=teleport_home,type=item,limit=1]
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 unless entity @e[tag=teleport_home,distance=..2,type=item] run kill @e[tag=teleport_home,type=item]
 execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 unless entity @e[tag=teleport_home,type=item] run setblock ~ ~ ~ air
-execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 unless entity @e[tag=teleport_home,type=item] run scoreboard players reset @s teleport_home
-
+execute if entity @p[scores={teleport_home=1..}] as @p[scores={teleport_home=1..}] positioned 0 10 0 unless entity @e[tag=teleport_home,type=item] run tag @s add home_trigger_cooldown
 # End Teleport Home Trigger
