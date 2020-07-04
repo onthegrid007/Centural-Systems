@@ -14,6 +14,7 @@ scoreboard players set @e[tag=home_handler] home_cooldown 100
 # End Home Triggers Cooldown Timer
 
 # Start Home State
+scoreboard objectives remove home_state
 scoreboard objectives add home_state dummy "Home State"
 scoreboard players set disabled home_state -1
 scoreboard players set enabled home_state 1
