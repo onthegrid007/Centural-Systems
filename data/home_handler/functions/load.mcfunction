@@ -8,7 +8,8 @@ scoreboard objectives add home_z dummy "Home Z Coordinate"
 scoreboard objectives add home_dimension dummy "Home Dimension"
 
 # Start Home Triggers Cooldown Timer
-scoreboard objectives add home_cooldown dummy "Home Triggers Cooldown Timer"
+scoreboard objectives remove home_cooldown
+scoreboard objectives add home_cooldown minecraft.custom:minecraft.play_one_minute "Home Triggers Cooldown Timer"
 scoreboard players set @e[tag=home_handler] home_cooldown 100
 # End Home Triggers Cooldown Timer
 
