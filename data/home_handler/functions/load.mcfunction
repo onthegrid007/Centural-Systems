@@ -1,8 +1,23 @@
+execute unless entity @e[tag=home_handler] run tellraw @a[tag=verbose] {"text":"home_handler not found, summoning at 0,0,0"}
+execute unless entity @e[tag=home_handler] run summon armor_stand 0 0 0 {NoGravity:1b,Marker:1b,Invisible:1b,Tags:["home_handler"]}
+
 # TODO storage by player UUID filter on login to populate scoreboard data then add remove on load as we would load their data from storage on login instead of perm storage in scoreboard
 scoreboard objectives add home_x dummy "Home X Coordinate"
 scoreboard objectives add home_y dummy "Home Y Coordinate"
 scoreboard objectives add home_z dummy "Home Z Coordinate"
 scoreboard objectives add home_dimension dummy "Home Dimension"
+
+# Start Home Triggers Cooldown Timer
+scoreboard objectives add home_cooldown dummy "Home Triggers Cooldown Timer"
+scoreboard players set @e[tag=home_handler] home_cooldown 100
+# End Home Triggers Cooldown Timer
+
+# Start Home State
+scoreboard objectives add home_state dummy "Home State"
+scoreboard players set disabled home_state -1
+scoreboard players set enabled home_state 1
+scoreboard players set cooldown home_state 0
+# End Home State
 
 # Start Set Home Triggers
 scoreboard objectives add set_home trigger "Set Home Trigger"
