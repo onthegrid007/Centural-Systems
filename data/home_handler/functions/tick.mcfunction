@@ -9,5 +9,5 @@ execute if entity @p[tag=home_trigger_enabled] as @a[tag=home_trigger_enabled] u
 
 
 
-execute if entity @p[scores{home_cooldown=100..}] as @a[scores={home_cooldown=100..}] run scoreboard players set @s home_cooldown 0
+execute if entity @p[scores={home_cooldown=100..}] as @a[scores={home_cooldown=100..}] run scoreboard players set @s home_cooldown 0
 
