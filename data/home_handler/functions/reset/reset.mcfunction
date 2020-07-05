@@ -4,15 +4,15 @@ execute unless entity @e[tag=home_handler] run summon armor_stand 0 0 0 {NoGravi
 # Start Home Coordinate Position Scoreboard Data
 # TODO storage by player UUID filter on login to populate scoreboard data then add remove on load as we would load their data from storage on login instead of perm storage in scoreboard
 # DO NOT UNCOMMENT
-#scoreboard objectives remove home_x
-#scoreboard objectives remove home_y
-#scoreboard objectives remove home_z
-#scoreboard objectives remove home_dimension
+# scoreboard objectives remove home_x
+# scoreboard objectives remove home_y
+# scoreboard objectives remove home_z
+# scoreboard objectives remove home_dimension
 # DO NOT UNCOMMENT 
 # End Home Coordinate Position Scoreboard Data
 
 # Start Home Triggers Cooldown Timer
-scoreboard objectives remove home_cooldown
+# scoreboard objectives remove home_cooldown
 # End Home Triggers Cooldown Timer
 
 # Start Home State
@@ -29,7 +29,7 @@ scoreboard objectives remove place_home
 # End Set Home Triggers
 
 # Start Delete Home Triggers
-scoreboard objectives remove delete_home
+scoreboard objectives remove delete_home trigger "Delete Home Trigger"
 # Start Delete Home Alternative Triggers
 scoreboard objectives remove DELHOME
 scoreboard objectives remove delhome
