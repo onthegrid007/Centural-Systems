@@ -13,6 +13,12 @@ scoreboard objectives add place_home trigger "Set Home Alternate Trigger Three"
 # End Set Home Alternate Triggers
 # End Set Home Triggers
 
+# Start Delete Home Triggers
+scoreboard objectives add delete_home trigger "Delete Home Trigger"
+# Start Delete Home Alternate Triggers
+# End Delete Home Alternate Triggers
+# End Delete Home Triggers
+
 # Start Get Home Triggers
 scoreboard objectives add get_home trigger "Get Home Trigger"
 # Start Get Home Alternate Triggers
