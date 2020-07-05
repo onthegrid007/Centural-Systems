@@ -7,4 +7,4 @@ function gamemode_handler:tick
 function mod_handler:tick
 function home_handler:tick/tick
 
-# function spawn_handler:tick
+function spawn_handler:tick
