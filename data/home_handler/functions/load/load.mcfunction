@@ -1,4 +1,4 @@
-function home_handler:reset/reset
+#function home_handler:reset/reset
 
 # TODO storage by player UUID filter on login to populate scoreboard data then add remove on load as we would load their data from storage on login instead of perm storage in scoreboard
 scoreboard objectives add home_x dummy "Home X Coordinate"
