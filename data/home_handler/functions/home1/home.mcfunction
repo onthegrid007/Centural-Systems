@@ -1,8 +1,8 @@
 tag @s add homeRun
 execute in minecraft:overworld run setblock 0 2 0 minecraft:end_gateway{ExactTeleport:1}
-execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.X long 1 run scoreboard players get @s home1_x
-execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Y long 1 run scoreboard players get @s home1_y
-execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Z long 1 run scoreboard players get @s home1_z
+execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.X long 1 run scoreboard players get @s home_x
+execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Y long 1 run scoreboard players get @s home_y
+execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Z long 1 run scoreboard players get @s home_z
 #summon minecraft:ender_pearl 0 2 0 {Motion:[0d, 0d, 0d]}
 summon item 0 2 0 {NoGravity:1b,Age:5960,PickupDelay:-1,Item:{id:"minecraft:paper",Count:1b,tag:{home_state:0L}}}
 #execute as @e[type=minecraft:item,nbt={Item:{tag:{home_state:0L}}}] run forceload add ~ ~
