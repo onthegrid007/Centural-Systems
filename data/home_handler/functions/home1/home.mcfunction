@@ -3,13 +3,7 @@ execute in minecraft:overworld run setblock 0 2 0 minecraft:end_gateway{ExactTel
 execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.X long 1 run scoreboard players get @s home1_x
 execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Y long 1 run scoreboard players get @s home1_y
 execute as @s[tag=homeRun] run execute store result block 0 2 0 ExitPortal.Z long 1 run scoreboard players get @s home1_z
-#summon minecraft:ender_pearl 0 2 0 {Motion:[0d, 0d, 0d]}
 summon item 0 2 0 {NoGravity:1b,Age:5960,PickupDelay:-1,Item:{id:"minecraft:paper",Count:1b,tag:{home_state:0L}}}
-#execute as @e[type=minecraft:item,nbt={Item:{tag:{home_state:0L}}}] run forceload add ~ ~
-#attribute @e[type=minecraft:armor_stand,x=0,y=0,limit=1] minecraft:generic.max_health base set 1
-#execute as @e[type=minecraft:ender_pearl,limit=1,x=0,z=0] run data modify entity @s Owner set from entity @a[tag=homeRun,limit=1] UUID
-#execute as @e[type=minecraft:ender_pearl,limit=1,x=0,z=0] run data modify entity @s Motion set value [0d, -2d, 0d]
-#execute in minecraft:overworld run setblock 0 2 0 air
 execute as @e[nbt={Item:{tag:{home_state:0L}}}] run say im the tp paper
 execute as @a[tag=homeRun,limit=1] run say im the player
 execute positioned 0 2 0 at @e[nbt={Item:{tag:{home_state:0L}}},limit=1,distance=2..] run tp @s[tag=homeRun] ~ ~ ~
@@ -19,6 +13,3 @@ execute at @e[nbt={Item:{tag:{home_state:0L}}},limit=1] if entity @s[distance=..
 
 execute as @a run function home_handler:enables
 #execute at @e[nbt={Item:{tag:{home_state:0L}}},limit=1] if entity @s[distance=..2] as @s run function home_handler:enables
-
-
-# MAybe try Tags instead of NBT custom tag, so Tags:["bla"] and tag= in selector
