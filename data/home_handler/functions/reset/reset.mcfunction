@@ -28,6 +28,15 @@ scoreboard objectives remove place_home
 # End Set Home Alternate Triggers
 # End Set Home Triggers
 
+# Start Delete Home Triggers
+scoreboard objectives remove delete_home
+# Start Delete Home Alternative Triggers
+scoreboard objectives remove DELHOME
+scoreboard objectives remove delhome
+scoreboard objectives remove DELETE_HOME
+# End Delete Home Alternative Triggers
+# End Delete Home Triggers
+
 # Start Get Home Triggers
 scoreboard objectives remove get_home
 # Start Get Home Alternate Triggers
