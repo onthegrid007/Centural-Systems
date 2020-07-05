@@ -1,4 +1,4 @@
-function storage_handler:tick
+#function storage_handler:tick
 
 function player_handler:tick
 function orientation_handler:tick
