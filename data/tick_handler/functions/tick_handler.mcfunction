@@ -1,9 +1,38 @@
 #
-function player_handler:tick
-function orientation_handler:tick
-function tp_handler:tick
-function gamemode_handler:tick
-function mod_handler:tick
-execute if entity @p as @a run function home_handler:tick/tick
+function gamemode_handler:tick/gamemode_tick_handler
 
-function spawn_handler:tick
+#skipped may not need tick handler
+#function gamerule_handler:tick/gamerule_tick_handler
+
+#
+function home_handler:tick/home_tick_handler
+
+#skipped may not need tick handler
+#function load_handler:tick/load_tick_handler
+
+#
+function mod_handler:tick/mod_tick_handler
+
+#
+function orientation_handler:tick/orientation_tick_handler
+
+#
+function player_handler:tick/player_tick_handler
+
+#skipped may not need tick handler
+#function reset_handler:tick/reset_tick_handler
+
+#skipped may not need tick handler
+#function scoreboard_handler:tick/scoreboard_tick_handler
+
+#
+function spawn_handler:tick/spawn_tick_handler
+
+#skipped may not need tick handler
+#function team_handler:tick/team_tick_handler
+
+#
+function teleport_handler:tick/teleport_tick_handler
+
+#
+function tellraw_handler:tick/tellraw_tick_handler
