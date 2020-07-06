@@ -1,5 +1,5 @@
 {
   "values":[
-	"general:load"
+	"load_hanlder:load_handler"
   ]
 }
