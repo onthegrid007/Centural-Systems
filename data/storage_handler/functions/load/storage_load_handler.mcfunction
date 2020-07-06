@@ -13,8 +13,8 @@ scoreboard objectives add found_by_uuid dummy "Has Found By UUID"
 scoreboard objectives add found_by_date dummy "Has Found By Date"
 
 scoreboard objectives add storage_day dummy "Storage Day As Number"
-scoreboard objectives add storage_month "Storage Month As Number"
-scoreboard objectives add storage_year "Storage Year As Number"
+scoreboard objectives add storage_month dummy "Storage Month As Number"
+scoreboard objectives add storage_year dummy "Storage Year As Number"
 
 
 scoreboard objectives add selector_count dummy "Number of Selectors"
