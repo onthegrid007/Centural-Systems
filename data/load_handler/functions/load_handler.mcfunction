@@ -1,3 +1,4 @@
+function storage_handler:load/storage_load_handler
 function scoreboard_handler:load/scoreboard_load_handler
 function gamerule_handler:load/gamerule_load_handler
 function team_handler:load/team_load_handler

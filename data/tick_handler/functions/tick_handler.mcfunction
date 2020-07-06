@@ -1,4 +1,7 @@
 #
+function storage_handler:tick/storage_tick_handler
+
+#
 function gamemode_handler:tick/gamemode_tick_handler
 
 #skipped may not need tick handler
