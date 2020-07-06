@@ -32,8 +32,8 @@ scoreboard objectives add gethome trigger "Get Home Alternate Trigger Two"
 # Start Teleport Home Triggers
 scoreboard objectives add teleport_home trigger "Teleport Home Trigger"
 # Start Teleport Home Alternate Triggers
-scoreboard objectives add home "Teleport Home Alternate Trigger One"
-scoreboard objectives add tp_home "Teleport Home Alternate Trigger Two"
-scoreboard objectives add HOME "Teleport Home Alternate Trigger Three"
+scoreboard objectives add home trigger "Teleport Home Alternate Trigger One"
+scoreboard objectives add tp_home trigger "Teleport Home Alternate Trigger Two"
+scoreboard objectives add HOME trigger "Teleport Home Alternate Trigger Three"
 # End Teleport Home Alternate Triggers
 # End Teleport Home Triggers
