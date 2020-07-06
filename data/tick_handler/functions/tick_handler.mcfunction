@@ -5,7 +5,7 @@ function gamemode_handler:tick/gamemode_tick_handler
 #function gamerule_handler:tick/gamerule_tick_handler
 
 #
-function home_handler:tick/home_tick_handler
+execute as @a run function home_handler:tick/home_tick_handler
 
 #skipped may not need tick handler
 #function load_handler:tick/load_tick_handler
