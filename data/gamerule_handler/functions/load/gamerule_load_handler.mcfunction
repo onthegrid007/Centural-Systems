@@ -29,3 +29,13 @@ gamerule sendCommandFeedback true
 gamerule showDeathMessages true
 gamerule spawnRadius 0
 gamerule spectatorsGenerateChunks true
+
+#
+forceload add -1 0
+forceload add 0 -1
+forceload add -1 -1
+forceload add 0 0
+worldborder center 0 0
+worldborder set 20000
+worldborder warning distance 1
+#

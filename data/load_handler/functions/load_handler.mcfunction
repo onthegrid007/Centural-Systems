@@ -1,25 +1,13 @@
-# load_handler requires tellraw_handler
-
-tag @a[tag=verbose] add tellraw_load_handler_loading
 
 function scoreboard_handler:load/scoreboard_load_handler
 function gamerule_handler:load/gamerule_load_handler
 function team_handler:load/team_load_handler
 function home_handler:load/home_load_handler
 function spawn_handler:load/spawn_load_handler
+function tellraw_handler:load/tellraw_load_handler
+function teleport_handler:load/teleport_load_handler
 
-#TODO decide how to handler this
-execute unless score NewID teleport_id >= #Setup teleport_id run function general:setuptp
-#gamerule?
-forceload add -1 0
-forceload add 0 -1
-forceload add -1 -1
-forceload add 0 0
-worldborder center 0 0
-worldborder set 20000
-worldborder warning distance 1
-#end gamerule?
-execute as @a[tag=TPEnabled] run function tp_handler:enables
+#TODO
 execute as @a[scores={mod_level=1..}] run function mod_handler:enables
 execute as @a run function orientation_handler:enables
 execute as @a[scores={mod_level=1..}] run function gamemode_handler:enables
