@@ -27,8 +27,8 @@ execute as @e[tag=storage_handler,type=armor_stand,limit=1] store success score 
 
 execute as @e[tag=storage_handler,type=armor_stand,limit=1] if score @s storage_players matches 0 run tag @s add storage_does_not_have_players_array
 
-execute if entitiy @e[tag=storage_does_not_have_players_array] run tellraw @a[tag=verbose] {"text":"storage_handler does not have players array"}
-execute if entitiy @e[tag=storage_does_not_have_players_array] run data modify storage minecraft:storage_handler players set value []
-execute if entitiy @e[tag=storage_does_not_have_players_array] as @e[tag=storage_does_not_have_players_array] run tag @s remove storage_does_not_have_players_array
+execute if entity @e[tag=storage_does_not_have_players_array] run tellraw @a[tag=verbose] {"text":"storage_handler does not have players array"}
+execute if entity @e[tag=storage_does_not_have_players_array] run data modify storage minecraft:storage_handler players set value []
+execute if entity @e[tag=storage_does_not_have_players_array] as @e[tag=storage_does_not_have_players_array] run tag @s remove storage_does_not_have_players_array
 
 scoreboard objectives remove storage_players
