@@ -5,7 +5,7 @@ execute unless entity @e[tag=storage_handler,type=armor_stand,limit=1] if entity
 
 scoreboard objectives add active_uuid_one dummy "Active UUID Part One"
 scoreboard objectives add active_uuid_two dummy "Active UUID Part Two"
-scoreboard objectives add active_uuid_three dummy "Active UUID Part Three"
+scoreboard objectives add active_uuid_tres dummy "Active UUID Part Three"
 scoreboard objectives add active_uuid_four dummy "Active UUID Part Four"
 
 scoreboard objectives add found_selector dummy "Has Found Selector(s)"
