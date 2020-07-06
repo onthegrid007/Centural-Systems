@@ -1,4 +1,4 @@
-execute unless entity @e[tag=handler,type=armor_stand,limit=1] run tellraw @a[tag=verbose] {"handler is required for this handler to work."}
+execute unless entity @e[tag=handler,type=armor_stand,limit=1] run tellraw @a[tag=verbose] {"text":"handler is required for this handler to work."}
 execute unless entity @e[tag=handler,type=armor_stand,limit=1] run summon armor_stand 0 0 0 {Tags:["handler","storage_handler"],NoGravity:1b,Marker:1b,Invulnerable:1b,Invisible:1b}
 
 execute unless entity @e[tag=storage_handler,type=armor_stand,limit=1] if entity @e[tag=handler,type=armor_stand,limit=1] as @e[tag=handler,type=armor_stand,limit=1] run tag @s add storage_handler
