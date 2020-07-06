@@ -34,3 +34,6 @@ scoreboard objectives add TPReply trigger
 scoreboard objectives add TPO trigger
 scoreboard objectives add TPOHERE trigger
 scoreboard objectives add xp xp "XP"
+#
+scoreboard objectives setdisplay list teleport_id
+scoreboard objectives setdisplay belowName health
