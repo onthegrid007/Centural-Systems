@@ -31,4 +31,4 @@ execute if entitiy @e[tag=storage_does_not_have_players_array] run tellraw @a[ta
 execute if entitiy @e[tag=storage_does_not_have_players_array] run data modify storage minecraft:storage_handler players set value []
 execute if entitiy @e[tag=storage_does_not_have_players_array] as @e[tag=storage_does_not_have_players_array] run tag @s remove storage_does_not_have_players_array
 
-scoreboard objecitves remove storage_players
+scoreboard objectives remove storage_players
