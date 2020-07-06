@@ -16,4 +16,4 @@ execute as @s[scores={teleport_home=2..}] run function home_handler:limit
 execute as @s[scores={set_home=2..}] run function home_handler:limit
 execute as @s[scores={delete_home=2..}] run function home_handler:limit
 
-function home_handler:reset/reset
+execute as @s run function home_handler:reset/reset
