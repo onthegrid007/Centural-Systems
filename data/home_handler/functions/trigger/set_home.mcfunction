@@ -1,5 +1,5 @@
 tag @s add run_set_home
-function orientation_handler:pos
+execute as @s run function orientation_handler:pos
 execute as @s[tag=run_set_home] store result score @s home_x run scoreboard players get @s position_x
 execute as @s[tag=run_set_home] store result score @s home_y run scoreboard players get @s position_y
 execute as @s[tag=run_set_home] store result score @s home_z run scoreboard players get @s position_z
