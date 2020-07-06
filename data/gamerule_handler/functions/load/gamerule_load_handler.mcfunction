@@ -1,3 +1,11 @@
+execute unless entity @e[tag=handler,type=armor_stand,limit=1] run tellraw @a[tag=verbose] {"text":"handler is required for this handler to work."}
+execute unless entity @e[tag=handler,type=armor_stand,limit=1] run summon armor_stand 0 0 0 {Tags:["handler","gamerule_handler"],NoGravity:1b,Marker:1b,Invulnerable:1b,Invisible:1b}
+
+execute if entity @e[tag=handler,tag=!gamerule_handler,type=armor_stand,limit=1] as @e[tag=handler,tag=!gamerule_handler,type=armor_stand,limit=1] run tag @s add gamerule_handler
+
+scoreboard objectives add player_cap dummy "Hardcoded Player Cap"
+execute as @e[tag=gamerule_handler] run scoreboard players set @s player_cap 100
+
 gamerule announceAdvancements true
 gamerule commandBlockOutput false
 gamerule disableElytraMovementCheck true
