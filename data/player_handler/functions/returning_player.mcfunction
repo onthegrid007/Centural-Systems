@@ -3,5 +3,5 @@ execute as @a[tag=TPEnabled] run function tp_handler:enables
 execute as @a[scores={mod_level=1..}] run function mod_handler:enables
 execute as @a run function orientation_handler:enables
 execute as @a[scores={mod_level=1..}] run function gamemode_handler:enables
-execute as @a run function home_handler:enables
+execute as @a run function home_handler:enable/enable_all
 scoreboard players set @s login_handler 0
