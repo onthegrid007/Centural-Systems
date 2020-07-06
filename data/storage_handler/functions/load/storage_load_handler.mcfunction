@@ -20,7 +20,7 @@ scoreboard objectives add storage_year dummy "Storage Year As Number"
 scoreboard objectives add selector_count dummy "Number of Selectors"
 scoreboard objectives add delete_selector dummy "Has Deleted Selector(s)"
 scoreboard objectives add delete_by_uuid dummy "Has Deleted By UUID"
-scoreboard objecitves add delete_by_date dummy "Has Deleted By Date"
+scoreboard objectives add delete_by_date dummy "Has Deleted By Date"
 
 scoreboard objectives add storage_players dummy "Storage Has Players Array"
 execute as @e[tag=storage_handler,type=armor_stand,limit=1] store success score @s storage_players run data get storage minecraft:storage_handler players
