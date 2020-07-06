@@ -17,4 +17,3 @@ execute as @s[scores={delete_home=1}] run function home_handler:trigger/delete_h
 #execute as @s[scores={delete_home=2..}] run function home_handler:limit
 
 execute as @s run function home_handler:reset/reset
-say test
