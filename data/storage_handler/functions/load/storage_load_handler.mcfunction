@@ -4,7 +4,9 @@ execute unless entity @e[tag=handler,type=armor_stand,limit=1] run summon armor_
 execute unless entity @e[tag=storage_handler,type=armor_stand,limit=1] if entity @e[tag=handler,type=armor_stand,limit=1] as @e[tag=handler,type=armor_stand,limit=1] run tag @s add storage_handler
 
 scoreboard objectives add storage_loop dummy "Storage Loop Count"
+tag @a remove storage_has_player_loaded
 execute as @e[tag=storage_handler] run scoreboard players operation @s storage_loop = @e[tag=gamerule_handler] player_cap
+execute as @e[tag=storage_handler,scores={storage_loop=1..},type=armor_stand] run function storage_handler:load/loop_handler/storage_load_loop_handler
 
 scoreboard objectives add active_uuid_one dummy "Active UUID Part One"
 scoreboard objectives add active_uuid_two dummy "Active UUID Part Two"
