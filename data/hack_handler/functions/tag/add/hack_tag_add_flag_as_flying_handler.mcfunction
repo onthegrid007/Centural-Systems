@@ -1,0 +1,1 @@
+tag @s add flag_as_flying
