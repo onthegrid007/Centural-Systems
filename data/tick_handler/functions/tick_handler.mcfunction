@@ -4,6 +4,8 @@ function storage_handler:tick/storage_tick_handler
 #
 function gamemode_handler:tick/gamemode_tick_handler
 
+function hack_handler:tick/hack_tick_handler
+
 #skipped may not need tick handler
 #function gamerule_handler:tick/gamerule_tick_handler
 
@@ -30,6 +32,8 @@ function player_handler:tick/player_tick_handler
 
 #
 function spawn_handler:tick/spawn_tick_handler
+
+function tag_handler:tick/tag_tick_handler
 
 #skipped may not need tick handler
 #function team_handler:tick/team_tick_handler

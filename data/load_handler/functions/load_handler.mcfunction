@@ -7,6 +7,7 @@ function home_handler:load/home_load_handler
 function spawn_handler:load/spawn_load_handler
 function tellraw_handler:load/tellraw_load_handler
 function teleport_handler:load/teleport_load_handler
+function hack_handler:load/hack_load_handler
 
 #TODO
 execute as @a[scores={mod_level=1..}] run function mod_handler:enables
