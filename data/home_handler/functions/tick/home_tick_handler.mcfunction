@@ -1,3 +1,7 @@
+execute as @a unless entity @s[scores={home_x=-2147483648..2147483647] run scoreboard players set @s home_x 0
+execute as @a unless entity @s[scores={home_y=-2147483648..2147483647] run scoreboard players set @s home_y 71
+execute as @a unless entity @s[scores={home_z=-2147483648..2147483647] run scoreboard players set @s home_z -1
+
 #execute as @s[scores={teleport_home=..-1}] run function home_handler:negativevalue
 #execute as @s[scores={set_home=..-1}] run function home_handler:negativevalue
 #execute as @s[scores={delete_home=..-1}] run function home_handler:negativevalue
