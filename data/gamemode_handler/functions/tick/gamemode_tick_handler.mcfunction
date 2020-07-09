@@ -7,4 +7,4 @@ execute as @a[scores={mod_level=8..,GM=3}] run function gamemode_handler:spectat
 execute as @a[scores={mod_level=..7,GM=3}] run function gamemode_handler:gamemodenotavaliable
 execute as @a[scores={GM=4..}] run function gamemode_handler:gamemodenotavaliable
 
-function gamemode_handler:reset
+execute as @a run function gamemode_handler:reset/gamemode_reset_handler
