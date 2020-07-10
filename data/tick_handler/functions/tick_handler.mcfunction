@@ -2,6 +2,9 @@
 function old_handler:tick/old_tick_handler
 
 #
+function jail_handler:tick/jail_tick_handler
+
+#
 function storage_handler:tick/storage_tick_handler
 
 #
