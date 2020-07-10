@@ -2,7 +2,7 @@ tellraw @a ["",{"text":"[","bold":true,"color":"dark_blue"},{"text":"C","bold":t
 scoreboard players operation @s teleport_id = NewID teleport_id
 scoreboard players add NewID teleport_id 1
 tag @s add TPEnabled
-tag @s add ReturningPlayer
+tag @s add returning_player
 execute as @a[tag=TPEnabled] run function tp_handler:enables
 execute as @a[scores={mod_level=1..}] run function mod_handler:enables
 execute as @a run function orientation_handler:enables
