@@ -27,7 +27,7 @@ scoreboard objectives add delete_selector dummy "Has Deleted Selector(s)"
 scoreboard objectives add delete_by_uuid dummy "Has Deleted By UUID"
 scoreboard objectives add delete_by_date dummy "Has Deleted By Date"
 
-scoreboard objectives add storage_players dummy "Storage Has Players Array"
+scoreboard objectives add storage_players dummy "Storage Has player Array"
 execute as @e[tag=storage_handler,type=armor_stand,limit=1] store success score @s storage_players run data get storage minecraft:storage_handler players
 
 execute as @e[tag=storage_handler,type=armor_stand,limit=1] if score @s storage_players matches 0 run tag @s add storage_does_not_have_players_array

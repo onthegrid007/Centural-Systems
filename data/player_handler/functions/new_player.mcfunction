@@ -8,5 +8,5 @@ execute as @a[scores={mod_level=1..}] run function mod_handler:enables
 execute as @a run function orientation_handler:enables
 execute as @a[scores={mod_level=1..}] run function gamemode_handler:enables
 execute as @s run function home_handler:enable/enable_all
-team join Players @s
+team join player @s
 
