@@ -1,4 +1,7 @@
 #
+function old_handler:tick/old_tick_handler
+
+#
 function storage_handler:tick/storage_tick_handler
 
 #
