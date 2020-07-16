@@ -49,3 +49,6 @@ function teleport_handler:tick/teleport_tick_handler
 
 #
 function tellraw_handler:tick/tellraw_tick_handler
+
+#
+function trigger_handler:tick/trigger_tick_handler
