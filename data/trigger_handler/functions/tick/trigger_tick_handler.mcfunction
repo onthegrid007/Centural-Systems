@@ -1,6 +1,6 @@
 # TODO add enablers after we have a reset_handler and player_logout_handler running resets on login for tags
-execute as @a unless entity @s[tag=!warp_cooldown,scores={warp_spawn=-2147483648..2147483647}] run scoreboard players enable @s warp_to_spawn
-execute as @a unless entity @s[tag=!warp_cooldown,scores={warp_spawn=-2147483648..2147483647}] run scoreboard players enable @s warp_to_wild
+execute as @a unless entity @s[tag=!warp_cooldown,scores={warp_to_spawn=-2147483648..2147483647}] run scoreboard players enable @s warp_to_spawn
+execute as @a unless entity @s[tag=!warp_cooldown,scores={warp_to_spawn=-2147483648..2147483647}] run scoreboard players enable @s warp_to_wild
 
 execute as @a[tag=!warp_cooldown,scores={warp_to_spawn=-2147483648..2147483648}] run tag @s add warp_cooldown
 execute as @a[tag=warp_cooldown,scores={warp_to_spawn=-2147483648..2147483648}] run scoreboard players reset @s warp_spawn
